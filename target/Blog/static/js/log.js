@@ -9,10 +9,14 @@ function findLogById(id){
         contentType: 'application/x-www-form-urlencoded; charset=utf-8',
         dataType: 'json',
         success: function (data) {
-            console.log(data);
+            var last = data.lastLog? "<a href='#' onClick='findLogById("+data.lastLog.id.toString()+")'>"+data.lastLog.title+"</a>":"没有了"
+            var next = data.nextLog? "<a href='#' onClick='findLogById("+data.nextLog.id.toString()+")'>"+data.nextLog.title+"</a>":"<p>没有了</p>"
+            console.log(last);
             var content = "<div class='logContent'><div class='header'><h2 class='hd'>"+data.title+"</h2><div class='bshare-custom icon-medium'><a title='分享到QQ空间' class='bshare-qzone'></a><a title='分享到新浪微博' class='bshare-sinaminiblog'></a><a title='分享到人人网' class='bshare-renren'></a><a title='分享到腾讯微博' class='bshare-qqmb'></a><a title='分享到网易微博' class='bshare-neteasemb'></a><a title='更多平台' class='bshare-more bshare-more-icon more-style-addthis'></a><span class='BSHARE_COUNT bshare-share-count'>0</span></div><script type='text/javascript' charset='utf-8' src='http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh'></script><script type='text/javascript' charset='utf-8' src='http://static.bshare.cn/b/bshareC0.js'></script></div>"+data.content+"</div>"
             //var obj = $.parseJSON(data);
-            content+="<div class='log_lastAndNext'><p>上一篇：</p><p>下一篇</p></div>"
+            console.log(next);
+            var lastAndNext = "<div class='log_lastAndNext'><p>上一篇:"+last+"</p><p>下一篇:"+next+"</p></div>"
+            content+=lastAndNext;
             $('#logContent').html(content)
         },
         error: function (error) {

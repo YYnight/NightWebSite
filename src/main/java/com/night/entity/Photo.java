@@ -13,10 +13,19 @@ import java.util.List;
 public class Photo implements Serializable {
     private static final long serialVersionUID = -1998759337010221668L;
 
+    private Integer id;
     private String name;    //相册名称
     private List<Photograph> photographs;   //存储的照片
     private String description;     //相册描述
     private Date createDate;        //创建日期
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

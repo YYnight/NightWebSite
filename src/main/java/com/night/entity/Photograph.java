@@ -10,9 +10,18 @@ import java.util.Date;
 public class Photograph implements Serializable {
     private static final long serialVersionUID = 1518213113065833774L;
 
+    private Integer id;     //图片的id
     private String imageName;   //图片文件名称
     private String path;    //图片保存路径
     private Date uploadDate;    //上传日期
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getImageName() {
         return imageName;

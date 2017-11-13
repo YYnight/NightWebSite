@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.night.dao.PhotoDao">
+    <resultMap id="PhotoResult" type="Photo">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="description" column="description"/>
+        <result property="createDate" column="createDate"/>
+        <collection property="photographs" column="id" select="com.night.dao.PhotographDao.findByPhotoId"></collection>
+    </resultMap>
+    <select id="findAll" resultMap="PhotoResult">
+        select * from t_photo
+    </select>
+</mapper>

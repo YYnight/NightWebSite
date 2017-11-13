@@ -6,6 +6,7 @@
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
     <mvc:resources mapping="/static/**" location="/static/"/>
+    <mvc:resources mapping="/upload/**" location="/upload/"/>
 
     <mvc:interceptors>
         <bean class="com.night.config.CharSetConfig"/>

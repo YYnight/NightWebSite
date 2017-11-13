@@ -59,7 +59,7 @@
     <a class="wrapMenu Menu5"><i class="fa fa-file-text-o" aria-hidden="true"></i>文章</a>
     <a class="wrapMenu Menu6"><i class="fa fa-pencil" aria-hidden="true"></i>笔记</a>
     <a class="wrapMenu Menu7"><i class="fa fa-music" aria-hidden="true"></i>音乐</a>
-    <a class="wrapMenu Menu8"><i class="fa fa-video-camera" aria-hidden="true"></i>视频</a>
+    <a class="wrapMenu Menu8" href="/tellme"><i class="fa fa-video-camera" aria-hidden="true"></i>留言</a>
 </div>
 <%--<div id="footer" class="footer">
     <a class="menu fa fa-home" aria-hidden="true"></a>

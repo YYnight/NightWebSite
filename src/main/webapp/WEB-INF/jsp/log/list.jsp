@@ -22,7 +22,9 @@
         </div>
     </div>--%>
     <div class="container">
-        <div class="page-header"></div>
+        <div class="page-header">
+            <h1>慢生活<small>我们长路漫漫，只因学无止境.....</small></h1>
+        </div>
         <div class="row">
             <div class="col-md-10 span10">
                 <div class="mod_summary" id="logContent">

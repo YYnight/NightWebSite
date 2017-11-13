@@ -1,0 +1,104 @@
+.container{
+    background-color: #C3CCD5;
+    height:80vh;
+    width:60vw;
+    overflow-y: auto;
+    font-family: 'Source Sans Pro',sans-serif;
+    animation: bounceIn 3s ease-in-out;
+}
+.albums{
+    width:100%;
+    float: left;
+}
+.albums-inner{
+    float: left;
+    width:15vh;
+    min-width:300px;
+    margin:5vh 0 5vh 3vw;
+}
+.albums-tab{
+    float: left;
+    width:15vw;
+    min-width:300px;
+    height:10vh;
+    min-height:200px;
+}
+.albums-tab img{
+    height:auto;
+    width: 290px;
+    background-color: rgba(255,255,255,1);
+    padding:5px;
+}
+
+.albums-tab-text{
+    float: left;
+    width:100%;
+    text-align: center;
+    color: rgba(53,117,159,1);
+    margin-top:15px;
+    font-size: 18px;
+}
+.albums-tab-text span{
+    font-size: 14px;
+    color: rgba(102,102,102,1);
+}
+.photo-anim{
+    position: relative;
+}
+.photo-anim img{
+    position: absolute;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.photo-anim:hover img{
+    z-index: 1;
+}
+
+.photo-anim:hover img:nth-child(1){
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+}
+.photo-anim:hover img:nth-child(2){
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+.photo-anim:hover img:nth-child(3){
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.photo-anim:hover img:nth-child(4){
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.photo-anim:hover img:nth-child(5){
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+.photo-anim:hover img:nth-child(6){
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+}
+.photo-anim:hover img:nth-child(7){
+    transform: scale(0.9);
+}

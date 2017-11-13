@@ -46,4 +46,25 @@
     <select id="findLogsByLogTypeId" parameterType="Integer" resultMap="LogResult">
         select * from t_blog where typeId=#{id}
     </select>
+
+    <select id="findLogByPreId" parameterType="Map" resultMap="LogResult">
+        select * from t_blog
+        <where>
+            <if test="typeId!=null and typeId!=''">
+                and typeId=#{typeId}
+            </if>
+            and id&lt;#{id}
+        </where>
+        Order by id DESC limit 1
+    </select>
+    <select id="findLogByNextId" parameterType="Map" resultMap="LogResult">
+        select * from t_blog
+        <where>
+            <if test="typeId!=null and typeId!=''">
+                and typeId=#{typeId}
+            </if>
+            and id&gt;#{id}
+        </where>
+        Order by id ASC limit 1
+    </select>
 </mapper>

@@ -34,7 +34,7 @@
         </span>
     </div>
 </div>
-<hr/>
+<hr class="text-info"/>
 <div class="box_calendar" id="calendarArea">
     <div class="bg2 bor2 calendar_year">
         <a class="c_tx glyphicon glyphicon-triangle-left" href="javascript:;"></a>

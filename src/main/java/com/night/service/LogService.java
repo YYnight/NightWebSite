@@ -33,4 +33,12 @@ public interface LogService {
      * 通过typeId查找日志
      */
     public List<Log> findLogsByLogTypeId(Integer id);
+    /**
+     * 通过id找到下一篇日志
+     */
+    public Log findLogByPreId(Map<String,Integer> map);
+    /**
+     * 通过Id找到前一篇日志
+     */
+    public Log findLogByNextId(Map<String,Integer> map);
 }

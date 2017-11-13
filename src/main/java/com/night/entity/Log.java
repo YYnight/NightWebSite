@@ -25,6 +25,8 @@ public class Log implements Serializable{
     private Integer blogNum;    //日志数量 非日志实际属性 主要是 根据发布日期归档查询日志数量用
     private String keyWord; //关键字 空格隔开
     private List<String> imageList = new LinkedList<String>(); //日志里存在的图片  主要用于列表展示缩略图
+    private Log lastLog;  //前一篇日志
+    private Log nextLog;  //后一篇日志
 
     public Integer getId() {
         return id;
@@ -120,5 +122,21 @@ public class Log implements Serializable{
 
     public void setImageList(List<String> imageList) {
         this.imageList = imageList;
+    }
+
+    public Log getLastLog() {
+        return lastLog;
+    }
+
+    public void setLastLog(Log lastLog) {
+        this.lastLog = lastLog;
+    }
+
+    public Log getNextLog() {
+        return nextLog;
+    }
+
+    public void setNextLog(Log nextLog) {
+        this.nextLog = nextLog;
     }
 }

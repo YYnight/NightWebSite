@@ -29,5 +29,13 @@ public interface LogDao {
      * 根据LogType的Id查找日志（同一分类的日志）
      */
     public List<Log> findLogsByLogTypeId(Integer id);
+    /**
+     * 根据Id查找下一篇日志
+     */
+    public Log findLogByPreId(Map<String,Integer> map);
+    /**
+     * 根据Id查找上一篇日志
+     */
+    public Log findLogByNextId(Map<String,Integer> map);
 
 }

@@ -1,0 +1,107 @@
+@import "animation.css";
+.container{
+    background-color: lightskyblue;
+    height:800px;
+}
+
+/*小白点*/
+#fountainG{
+    position: relative;
+    width: 240px;
+    height: 29px;
+    margin-bottom: 30px;
+}
+#fountainG li{
+    display:list-item;
+    list-style: none;
+    position: absolute;
+    top:0;
+    width: 29px;
+    height: 29px;
+    animation: bounce_fountainG 1.2s linear infinite;
+    transform: scale(.3);
+    border-radius: 19px;
+}
+#fountainG li:first-child{
+    left:0;
+    animation-delay: 0.48s;
+}
+
+#fountainG li:nth-child(2){
+    left:30px;
+    animation-delay: 0.6s;
+}
+
+#fountainG li:nth-child(3){
+    left:60px;
+    animation-delay: 0.72s;
+}
+#fountainG li:nth-child(4){
+    left:90px;
+    animation-delay: 0.84s;
+}
+#fountainG li:nth-child(5){
+    left:120px;
+    animation-delay: 0.96s;
+}
+#fountainG li:nth-child(6){
+    left:150px;
+    animation-delay: 1.08s;
+}
+#fountainG li:nth-child(7){
+    left:180px;
+    animation-delay: 1.2s;
+}
+#fountainG li:nth-child(8){
+    left:210px;
+    animation-delay: 1.32s;
+}
+
+/**
+    about boy
+ */
+
+.about_boy{
+    width: 100%;
+    margin:10px auto 0;
+    overflow: hidden;
+}
+.about_boy span{
+    float: left;
+    margin-right:30px;
+}
+a:link,a:visited,a:active{
+    text-decoration: none;
+    color: #fff;
+}
+.about_boy span img{
+    width:130px;
+    height: 130px;
+    border-radius: 100%;
+    display: block;
+}
+.about_boy p{
+    margin:20px;
+    background-color: #ececec;
+    color: #444;
+    float: left;
+    padding: 20px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: inset #999 -1px -1px 1px;
+    text-shadow: #fff 1px 1px 0px;
+    width:450px;
+}
+.about_boy p::before{
+    content:"";
+    width:0px;
+    height:0px;
+    border-style:solid;
+    border-width:20px 20px 20px 0;
+    border-color: transparent #ececec transparent;
+    position: absolute;
+    left:-20px;
+    top:24px;
+}

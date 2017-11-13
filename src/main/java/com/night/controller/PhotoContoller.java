@@ -1,7 +1,13 @@
 package com.night.controller;
 
+import com.night.entity.Photo;
+import com.night.service.PhotoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author dyoon
@@ -11,8 +17,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/photo")
 public class PhotoContoller {
 
+    @Resource private PhotoService photoService;
+
     @RequestMapping
-    public String list(){
-        return "/photo/photo";
+    public ModelAndView list(){
+        ModelAndView mv = new ModelAndView();
+        List<Photo> photoList = photoService.findAll();
+        mv.addObject("photoList",photoList);
+        mv.setViewName("/photo/photos");
+        return mv;
     }
 }

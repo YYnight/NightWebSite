@@ -1,0 +1,29 @@
+/*加载动画1*/
+@keyframes bounceIn {
+    0%{
+        opacity:0;
+        transform: scale(.3);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70%{
+        transform: scale(.9);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+/*留言版小白点动画*/
+@keyframes bounce_fountainG {
+    0%{
+        transform: scale(1);
+        background-color: #6dabdc;
+    }
+    100%{
+        transform: scale(.3);
+        background-color: #ffffff;
+    }
+}

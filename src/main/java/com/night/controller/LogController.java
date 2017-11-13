@@ -71,6 +71,10 @@ public class LogController {
     @ResponseBody
     public String findLogById(@RequestParam("id") Integer id, HttpServletResponse response){
         Log log = logService.findById(id);
+        Map<String,Integer> map = new HashMap<String, Integer>();
+        map.put("id",log.getId());
+        log.setLastLog(logService.findLogByNextId(map));
+        log.setNextLog(logService.findLogByPreId(map));
         JSONObject jsonObject = JSONObject.fromObject(log);
         return jsonObject.toString();
     }

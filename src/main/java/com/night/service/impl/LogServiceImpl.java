@@ -34,4 +34,12 @@ public class LogServiceImpl implements LogService {
     public List<Log> findLogsByLogTypeId(Integer id) {
         return logDao.findLogsByLogTypeId(id);
     }
+
+    public Log findLogByPreId(Map<String, Integer> map) {
+        return logDao.findLogByPreId(map);
+    }
+
+    public Log findLogByNextId(Map<String, Integer> map) {
+        return logDao.findLogByNextId(map);
+    }
 }
