@@ -4,6 +4,7 @@ import com.night.entity.Photo;
 import com.night.service.PhotoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
@@ -26,5 +27,10 @@ public class PhotoContoller {
         mv.addObject("photoList",photoList);
         mv.setViewName("/photo/photos");
         return mv;
+    }
+
+    @RequestMapping("/findAllPhotograph")
+    public ModelAndView findPhotographsByPhotoId(@RequestParam("id") Integer id){
+        return null;
     }
 }

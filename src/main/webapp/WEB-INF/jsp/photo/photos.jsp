@@ -23,7 +23,7 @@
                         <img src="${image.path}" class="image">
                     </c:forEach>
                 </div>
-                <div class="albums-tab-text">${photo.name}<span>(${photo.photographs.size()}pictures)</span></div>
+                <div class="albums-tab-text"><a href="<c:url value='/photograph/findByPhotoId?id=${photo.id}'/>">${photo.name}</a><span>(${photo.photographs.size()}pictures)</span></div>
             </div>
             </c:forEach>
         </div>

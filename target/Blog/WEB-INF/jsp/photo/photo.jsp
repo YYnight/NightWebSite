@@ -8,8 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="/static/css/sim-prev-anim.css"/>
-    <link rel="stylesheet" href="/static/css/main.css"/>
+    <link rel="stylesheet" href="/static/css/_sim-prev-anim.css"/>
+    <link rel="stylesheet" href="/static/css/_main.css"/>
     <script type="text/javascript">
         function stops(){
             return false;

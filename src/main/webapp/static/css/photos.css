@@ -1,10 +1,15 @@
+@import "animation.css";
 .container{
     background-color: #C3CCD5;
     height:80vh;
     width:60vw;
     overflow-y: auto;
+    margin:1vh auto;
+    border-radius: 5vh;
     font-family: 'Source Sans Pro',sans-serif;
-    animation: bounceIn 3s ease-in-out;
+    animation-name: bounceIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
 }
 .albums{
     width:100%;
@@ -37,6 +42,11 @@
     color: rgba(53,117,159,1);
     margin-top:15px;
     font-size: 18px;
+}
+
+.albums-tab-text a{
+    overflow: hidden;
+    color: #F00;
 }
 .albums-tab-text span{
     font-size: 14px;
@@ -101,4 +111,98 @@
 }
 .photo-anim:hover img:nth-child(7){
     transform: scale(0.9);
+}
+
+
+.container ul{
+    list-style: none;
+}
+.container ul li{
+    border:solid 5px lightgoldenrodyellow;
+    margin: 2vh 1vh;
+    float: left;
+    position: relative;
+}
+.container ul li .info{
+    background-color: rgba(255,255,255,0.6);
+    position: absolute;
+    left:0;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.container ul li:hover{
+    transform: scale(1.05);
+}
+.container ul li:hover .info{
+    display:block;
+    animation: fadeIn 0.5s;
+}
+.container ul li img{
+    width: 25vh;
+    height: 25vh;
+    min-width: 200px;
+    min-height:200px;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        height:0;
+    }
+    100%{
+        opacity: 1;
+        height: 5vh;
+    }
+}
+
+/*遮罩层*/
+.mask{
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.8);
+    filter:alpha(Opacity=20);
+    display: none;
+}
+
+.maskContent{
+    width:60vw;
+    height: 80vh;
+    border:solid 1px #2aabd2;
+    background-color: rgba(255,255,255,.7);
+    position: absolute;
+    z-index:1005;
+    left:50%;
+    top:50%;
+    margin-left:-30vw;
+    margin-top: -40vh;
+}
+.mask .maskContent .close{
+    position: absolute;
+    top: 1vh;
+    right:1vh;
+}
+.mask .maskContent .neirong{
+    width:40vw;
+    height: 60vh;
+    border:solid 1px #2aabd2;
+    position: absolute;
+    z-index:1005;
+    left:50%;
+    top:50%;
+    margin-left:-20vw;
+    margin-top: -30vh;
+    text-align: center;
+    line-height: 60vh;
+}
+.mask .maskContent .neirong img{
+    width:40vw;
+    height: 60vh;
+    margin:auto;
+    max-width: 40vw;
+    max-height: 60vh;
 }
