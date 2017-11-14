@@ -1,17 +1,4 @@
 @import "animation.css";
-.container{
-    background-color: rgba(255,250,205,1);
-    width:60vw;
-    height: 80vh;
-    margin:1vh auto;
-    border-radius: 5vh;
-    animation-name: bounceIn;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-.page-header{
-    height: 10%;
-}
 .row{
     height:80%;
 }
@@ -20,10 +7,6 @@
 }
 .block{
     padding-bottom:10px;
-}
-.span10{
-    height:100%;
-    overflow-y: scroll ;
 }
 
 /*日历样式*/

@@ -11,6 +11,7 @@
 <head>
     <title>Title</title>
     <link rel="stylesheet" href="/static/css/log.css"/>
+    <link rel="stylesheet" href="/static/css/aboutme.css"/>
     <script src="/static/js/log.js"></script>
 </head>
 <body>
@@ -21,12 +22,18 @@
             <div class="span2">10</div>
         </div>
     </div>--%>
-    <div class="container">
-        <div class="page-header">
-            <h1>慢生活<small>我们长路漫漫，只因学无止境.....</small></h1>
-        </div>
+    <div class="con_content">
+        <div class="about_box">
+            <h2 class="nh1">
+                <span>
+                    "您现在的位置是"
+                    <a href="#">网站首页</a>">>"
+                    <a href="#">日志浏览</a>
+                </span>
+                <b>个人日志</b>
+            </h2>
         <div class="row">
-            <div class="col-md-10 span10">
+            <div class="col-md-9">
                 <div class="mod_summary" id="logContent">
                     <ul class="list-unstyled">
                         <c:forEach items="${logList}" var="log">
@@ -49,10 +56,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-2 span2">
+            <div class="col-md-3 span2">
                 <%@include file="rightcontent.jsp"%>
             </div>
         </div>
     </div>
+    </div>
+</body>
 </body>
 </html>
