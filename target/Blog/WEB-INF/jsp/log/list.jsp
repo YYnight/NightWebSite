@@ -22,7 +22,7 @@
             <div class="span2">10</div>
         </div>
     </div>--%>
-    <div class="con_content">
+    <div class="con_content" data-scroll-reveal="enter top 0.5s">
         <div class="about_box">
             <h2 class="nh1">
                 <span>
@@ -33,7 +33,7 @@
                 <b>个人日志</b>
             </h2>
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-10">
                 <div class="mod_summary" id="logContent">
                     <ul class="list-unstyled">
                         <c:forEach items="${logList}" var="log">
@@ -56,12 +56,18 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-3 span2">
+            <div class="col-md-2 span2">
                 <%@include file="rightcontent.jsp"%>
             </div>
         </div>
     </div>
     </div>
-</body>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+            (function(){
+                window.scrollReveal = new scrollReveal({reset: true});
+            })();
+        };
+    </script>
 </body>
 </html>

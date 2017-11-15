@@ -14,7 +14,7 @@
 </head>
 <body>
     <%@include file="../base.jsp"%>
-    <div class="con_content">
+    <div class="con_content" data-scroll-reveal="enter top 0.5s">
         <div class="about_box">
             <h2 class="nh1">
                 <span>
@@ -37,7 +37,7 @@
                         <span>2017</span>
                     </time>
                     <div class="cbp_tmicon"></div>
-                    <div class="cbp_tmlabel" data-scroll-reveal="enter right over 1s">
+                    <div class="cbp_tmlabel" data-scroll-reveal="enter right 1s">
                         <h2>三步实现滚动条触动css动画效果</h2>
                         <p><span class="blogpic"><a href="/"><img src="/static/images/p03.jpg" alt=""></a></span>
                             现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</p>
@@ -93,6 +93,95 @@
                         <h2>三步实现滚动条触动css动画效果</h2>
                         <p><span class="blogpic"><a href="/"><img src="/static/images/p03.jpg" alt=""></a></span>
                             现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</p>
+                        <a href="/"class="readmore">阅读全文&gt;&gt;</a>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime">
+                        <span>08-08</span>
+                        <span>2017</span>
+                    </time>
+                    <div class="cbp_tmicon"></div>
+                    <div class="cbp_tmlabel" data-scroll-reveal="enter right 1s">
+                        <h2>三步实现滚动条触动css动画效果</h2>
+                        <p><span class="blogpic"><a href="/"><img src="/static/images/p03.jpg" alt=""></a></span>
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</p>
+                        <a href="/"class="readmore">阅读全文&gt;&gt;</a>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime">
+                        <span>08-08</span>
+                        <span>2017</span>
+                    </time>
+                    <div class="cbp_tmicon"></div>
+                    <div class="cbp_tmlabel" data-scroll-reveal="enter right 1s">
+                        <h2>三步实现滚动条触动css动画效果</h2>
+                        <p><span class="blogpic"><a href="/"><img src="/static/images/p03.jpg" alt=""></a></span>
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</p>
+                        <a href="/"class="readmore">阅读全文&gt;&gt;</a>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime">
+                        <span>08-08</span>
+                        <span>2017</span>
+                    </time>
+                    <div class="cbp_tmicon"></div>
+                    <div class="cbp_tmlabel" data-scroll-reveal="enter right 1s">
+                        <h2>三步实现滚动条触动css动画效果</h2>
+                        <p><span class="blogpic"><a href="/"><img src="/static/images/p03.jpg" alt=""></a></span>
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</p>
+                        <a href="/"class="readmore">阅读全文&gt;&gt;</a>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime">
+                        <span>08-08</span>
+                        <span>2017</span>
+                    </time>
+                    <div class="cbp_tmicon"></div>
+                    <div class="cbp_tmlabel" data-scroll-reveal="enter right 1s">
+                        <h2>三步实现滚动条触动css动画效果</h2>
+                        <p><span class="blogpic"><a href="/"><img src="/static/images/p03.jpg" alt=""></a></span>
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</p>
+                        <a href="/"class="readmore">阅读全文&gt;&gt;</a>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime">
+                        <span>08-08</span>
+                        <span>2017</span>
+                    </time>
+                    <div class="cbp_tmicon"></div>
+                    <div class="cbp_tmlabel" data-scroll-reveal="enter right 1s">
+                        <h2>三步实现滚动条触动css动画效果</h2>
+                        <p class="art_summary"><span class="blogpic"><a href="/"><img src="/static/images/p03.jpg" alt=""></a></span>
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力...</p>
+                        <a href="/"class="readmore">阅读全文&gt;&gt;</a>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime">
+                        <span>08-08</span>
+                        <span>2017</span>
+                    </time>
+                    <div class="cbp_tmicon"></div>
+                    <div class="cbp_tmlabel" data-scroll-reveal="enter right 1s">
+                        <h2>三步实现滚动条触动css动画效果</h2>
+                        <p class="art_summary"><span class="blogpic"><a href="/"><img src="/static/images/p03.jpg" alt=""></a></span>
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力
+                            wozjend额想知道到底有多长，尼恩给你编程什么样子
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力
+                            wozjend额想知道到底有多长，尼恩给你编程什么样子
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力
+                            wozjend额想知道到底有多长，尼恩给你编程什么样子
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力
+                            wozjend额想知道到底有多长，尼恩给你编程什么样子
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力
+                            wozjend额想知道到底有多长，尼恩给你编程什么样子
+                            现在很多网站都有这种效果，我就整理了一下，分享出来。利用滚动条来实现动画效果，ScrollReveal.js 用于创建和管理元素进入可视区域时的动画效果，帮助你的网站增加吸引力
+                            wozjend额想知道到底有多长，尼恩给你编程什么样子...</p>
                         <a href="/"class="readmore">阅读全文&gt;&gt;</a>
                     </div>
                 </li>
@@ -100,5 +189,12 @@
             </ul>
         </div>
     </div>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+            (function(){
+                window.scrollReveal = new scrollReveal({reset: true});
+            })();
+        };
+    </script>
 </body>
 </html>

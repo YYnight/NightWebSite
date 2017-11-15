@@ -15,12 +15,14 @@
     <title>Photo</title>
 
     <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/base.css">
     <link rel="stylesheet" href="/static/framework/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"/>
     <script src="/static/framework/jquery-2.1.4/jquery.min.js"></script>
     <script src="/static/framework/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="/static/framework/jquery-2.1.4/Particleground.js"></script>
     <script src="/static/framework/jquery-2.1.4/scrollReveal.js"></script>
     <link rel="stylesheet" href="/static/framework/bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <script src="/static/js/utils.js"></script>
     <script type="text/javascript">
         $(function(){
             $('#particles').particleground();
@@ -29,6 +31,7 @@
                 lineColor:'#ff0000'
             })
             $(".mask").css("height",$(window).height())
+            wordLimit('.art_summary',100);
             var timer = null;
             var right = $($(".photo-menu").find("a")[0]).css("right").slice(0,-2);
             $(".photo-menu").mouseenter(function(){
@@ -57,7 +60,7 @@
 <body>
 <div id="particles" style="z-index:-2;width: 100%;height: 100%;position:fixed;"></div>
 <div class="header">
-    <div class="logo"><img src="/static/images/logo.png"/> <span>只有更强，才能掌握自己的命运....</span></div>
+    <div class="logo" data-scroll-reveal="enter left 1s"><img src="/static/images/logo.png"/> <span>只有更强，才能掌握自己的命运....</span></div>
         <div class="weather">
             <iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=3" width="160" height="70" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
         </div>

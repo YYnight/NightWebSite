@@ -9,6 +9,11 @@
     padding-bottom:10px;
 }
 
+.hd{
+    text-align: center;
+    background-image: linear-gradient(left,white,black,white);
+}
+
 /*日历样式*/
 #calendarArea .bg2 {
     background-color: #EBF7FD;
