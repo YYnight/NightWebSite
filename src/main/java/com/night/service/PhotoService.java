@@ -1,5 +1,6 @@
 package com.night.service;
 
+import com.night.entity.PageBean;
 import com.night.entity.Photo;
 
 import java.util.List;
@@ -15,4 +16,9 @@ public interface PhotoService {
      * @return
      */
     public List<Photo> findAll();
+
+    /**
+     * 分页查询相册
+     */
+    public PageBean<Photo> findByPage(Integer page);
 }

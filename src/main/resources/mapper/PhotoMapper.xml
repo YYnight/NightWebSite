@@ -13,4 +13,10 @@
     <select id="findAll" resultMap="PhotoResult">
         select * from t_photo
     </select>
+    <select id="findByPage" parameterType="Integer" resultMap="PhotoResult">
+        select * from t_photo limit #{startPos},#{pageSize}
+    </select>
+    <select id="findCount" resultType="Long">
+        select count(*) from t_photo
+    </select>
 </mapper>
