@@ -21,12 +21,15 @@ public class PhotoContoller {
     @Resource private PhotoService photoService;
 
     @RequestMapping
-    public ModelAndView list(){
+    /*public ModelAndView list(){
         ModelAndView mv = new ModelAndView();
         List<Photo> photoList = photoService.findAll();
         mv.addObject("photoList",photoList);
         mv.setViewName("/photo/photos");
         return mv;
+    }*/
+    public String list(){
+        return "/photo/photo";
     }
 
     @RequestMapping("/findAllPhotograph")

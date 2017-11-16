@@ -14,8 +14,17 @@
 </head>
 <body>
     <%@include file="../base.jsp"%>
-    <div class="container">
-        <div class="albums">
+    <div class="con_content" data-scroll-reveal="enter top 0.5s">
+        <div class="about_box">
+            <h2 class="nh1">
+                <span>
+                    "您现在的位置是"
+                    <a href="#">网站首页</a>">>"
+                    <a href="#">相册浏览</a>
+                </span>
+                <b>个人相册</b>
+            </h2>
+        <div class="albums" data-scroll-reveal="wait 0.5s and enter top 1s">
             <c:forEach items="${photoList}" var="photo">
             <div class="albums-inner">
                 <div class="albums-tab photo-anim " id="photo-anim1">
@@ -28,5 +37,13 @@
             </c:forEach>
         </div>
     </div>
+    </div>
+    <script>
+        if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+            (function(){
+                window.scrollReveal = new scrollReveal({reset: true});
+            })();
+        };
+    </script>
 </body>
 </html>
