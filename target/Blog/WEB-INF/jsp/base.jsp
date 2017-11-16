@@ -70,7 +70,7 @@
     <a class="wrapMenu Menu1" href="<c:url value="/index"/>"><i class="fa fa-home" aria-hidden="true"></i>主页</a>
     <a class="wrapMenu Menu2" href="<c:url value="/aboutme"/>"><i class="fa fa-user-o" aria-hidden="true"></i>个人信息</a>
     <a class="wrapMenu Menu3" href="<c:url value="/log"/>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>日志</a>
-    <a class="wrapMenu Menu4" href="<c:url value="/photo"/>"><i class="fa fa-picture-o" aria-hidden="true"></i>图片</a>
+    <a class="wrapMenu Menu4" href="<c:url value="/photo/1"/>"><i class="fa fa-picture-o" aria-hidden="true"></i>图片</a>
     <a class="wrapMenu Menu5"><i class="fa fa-file-text-o" aria-hidden="true"></i>文章</a>
     <a class="wrapMenu Menu6"><i class="fa fa-pencil" aria-hidden="true"></i>笔记</a>
     <a class="wrapMenu Menu7"><i class="fa fa-music" aria-hidden="true"></i>音乐</a>

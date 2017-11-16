@@ -1,6 +1,7 @@
 package com.night.dao;
 
 import com.night.entity.Photo;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -11,4 +12,8 @@ import java.util.List;
  */
 public interface PhotoDao {
     public List<Photo> findAll();
+
+    public Long findCount();
+
+    public List<Photo> findByPage(@Param("startPos") Integer startPos, @Param("pageSize") Integer pageSize);
 }

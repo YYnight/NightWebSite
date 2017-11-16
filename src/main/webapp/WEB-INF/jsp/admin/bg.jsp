@@ -5,11 +5,15 @@
   Time: 13:55
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <html>
 <head>
     <title></title>
-    <script src="/static/framework/jquery-2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="/static/framework/easyui/themes/default/easyui.css"/>
+    <link rel="stylesheet" href="/static/framework/easyui/themes/icon.css"/>
+    <script type="text/javascript" src="/static/framework/jquery-2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/framework/easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="/static/framework/easyui/locale/easyui-lang-zh_CN.js"></script>
     <script src="/static/framework/jquery-2.1.4/scrollReveal.js"></script>
     <script src="/static/framework/jquery-2.1.4/Particleground.js"></script>
     <link rel="stylesheet" href="/static/css/admin/base.css"/>
@@ -23,7 +27,7 @@
         })
     </script>
 </head>
-<div id="particles" style="z-index:-2;width: 100%;height: 100%;position:fixed;"></div>
+<%--<div id="particles" style="z-index:-2;width: 100%;height: 100%;position:fixed;"></div>--%>
 <div class="header">
     <div class="logo" data-scroll-reveal="enter left 1s"><img src="/static/images/logo.png"/> <span>只有更强，才能掌握自己的命运....</span></div>
     <div class="weather">

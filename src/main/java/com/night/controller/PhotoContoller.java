@@ -1,8 +1,11 @@
 package com.night.controller;
 
+import com.night.entity.PageBean;
 import com.night.entity.Photo;
 import com.night.service.PhotoService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -20,17 +23,20 @@ public class PhotoContoller {
 
     @Resource private PhotoService photoService;
 
-    @RequestMapping
-    /*public ModelAndView list(){
+    @GetMapping("{page}")
+    public ModelAndView list(@PathVariable(value = "page",required = false)Integer page){
         ModelAndView mv = new ModelAndView();
-        List<Photo> photoList = photoService.findAll();
-        mv.addObject("photoList",photoList);
+        if(page==null||page==0){
+            page=1;
+        }
+        PageBean<Photo> pageBean = photoService.findByPage(page);
+        mv.addObject("pageBean",pageBean);
         mv.setViewName("/photo/photos");
         return mv;
-    }*/
-    public String list(){
-        return "/photo/photo";
     }
+//    public String list(){
+//        return "/photo/photo";
+//    }
 
     @RequestMapping("/findAllPhotograph")
     public ModelAndView findPhotographsByPhotoId(@RequestParam("id") Integer id){
